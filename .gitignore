@@ -1,0 +1,42 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Data (keep placeholder only)
+data/**
+!data/.gitkeep
+
+# Archives / dumps
+*.tgz
+*.zip
+exports/
+dumps/
+
+# Logs
+logs/
+*.log
+
+# DB volumes
+graphdb-home/
+pgdata/
+
+# Cache / embeddings
+cache/
+faiss_index/
+*.index
+*.bin
+
+
+#I excluded RDF dumps (*.trig, *.nq, *.ttl) because patch dumps get huge fast.
+#If you want to commit your ontology files, put them under docs/ and name them explicitly (or remove *.ttl and ignore only exports/).

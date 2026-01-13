@@ -37,6 +37,7 @@ faiss_index/
 *.index
 *.bin
 
-
+#nginx username and password
+infra\graphdb\htpasswd
 #I excluded RDF dumps (*.trig, *.nq, *.ttl) because patch dumps get huge fast.
 #If you want to commit your ontology files, put them under docs/ and name them explicitly (or remove *.ttl and ignore only exports/).
